@@ -1,0 +1,30 @@
+{
+  "name": "multislack",
+  "version": "0.0.1",
+  "description": "PRERELEASE - A node server that syncs messages to channels on different Slack teams.",
+  "main": "multislack.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therebelrobot/multislack.git"
+  },
+  "keywords": [
+    "slack",
+    "multi",
+    "sync",
+    "teams",
+    "sameroom",
+    "slackline",
+    "channels",
+    "chan",
+    "multiple"
+  ],
+  "author": "Trent Oswald <trentoswald@therebelrobot.com> (@therebelrobot)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therebelrobot/multislack/issues"
+  },
+  "homepage": "https://github.com/therebelrobot/multislack#readme"
+}
