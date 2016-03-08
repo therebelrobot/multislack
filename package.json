@@ -26,5 +26,21 @@
   "bugs": {
     "url": "https://github.com/therebelrobot/multislack/issues"
   },
-  "homepage": "https://github.com/therebelrobot/multislack#readme"
+  "homepage": "https://github.com/therebelrobot/multislack#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "errorhandler": "^1.4.3",
+    "express": "^4.13.4",
+    "lodash": "^4.6.1",
+    "moment": "^2.12.0",
+    "morgan": "^1.7.0",
+    "numeral": "^1.5.3",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "dotenv": "^2.0.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "standard": "^6.0.8"
+  }
 }
