@@ -4,6 +4,7 @@
   "description": "PRERELEASE - A node server that syncs messages to channels on different Slack teams.",
   "main": "multislack.js",
   "scripts": {
+    "start": "node demo/server.js",
     "test": "mocha"
   },
   "repository": {
