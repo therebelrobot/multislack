@@ -19,6 +19,12 @@ var app = multislack({
       outgoing_token:process.env.TESTING_TEAM_OUTGOING2,
       incoming_url:process.env.TESTING_TEAM_INCOMING2,
       auth_token:process.env.TESTING_TEAM_AUTH2
+    },
+    {
+      team_domain: process.env.TESTING_TEAM_DOMAIN3,
+      outgoing_token:process.env.TESTING_TEAM_OUTGOING3,
+      incoming_url:process.env.TESTING_TEAM_INCOMING3,
+      auth_token:process.env.TESTING_TEAM_AUTH3
     }
   ],
   bot:{
