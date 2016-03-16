@@ -1,12 +1,22 @@
+var express = require('express')
+var bodyParser = require('body-parser')
+var logger = require('morgan')
+var errorHandler = require('errorhandler')
+var dotenv = require('dotenv')
+
 var multislack = require('../multislack')
 
-var dotenv = require('dotenv')
 
 if(!process.env.TESTING_TEAM_DOMAIN1){
   dotenv.load({ path: '.env' })
 }
 
-var app = multislack({
+var app = express()
+app.set('port', process.env.PORT || 9988)
+app.use(logger(process.env.ENVIRONMENT || 'dev'))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+app.post('/', multislack({
   teams:[
     {
       team_domain: process.env.TESTING_TEAM_DOMAIN1,
@@ -33,6 +43,8 @@ var app = multislack({
     icon_emoji:false,
     username:false
   }
-}, function(){
-  console.log('multislack demo running')
+}))
+app.use(errorHandler())
+app.listen(app.get('port'), function () {
+  console.warn('MultiSlack Webhooks listening on port %d in %s mode', app.get('port'), app.get('env'))
 })
