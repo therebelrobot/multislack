@@ -1,6 +1,6 @@
 {
   "name": "multislack",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "PRERELEASE - A node server that syncs messages to channels on different Slack teams.",
   "main": "multislack.js",
   "scripts": {
